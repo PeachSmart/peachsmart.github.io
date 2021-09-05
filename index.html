@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V20</title>
+	<title>PeachSmart Invoicing</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -32,28 +32,42 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-b-160 p-t-50">
-				<form action="http://dash.myfd.gq/index.php" method="POST" class="login100-form validate-form">
+				<form onSubmit="return checkAnswer();" class="login100-form validate-form">
 					<span class="login100-form-title p-b-43">
-						<a href="https://myfd.gq"><img src="images/logo.svg" alt="Account Login"></a>
+						<a href="https://peachsmart.github.io"><img src="images/logo.svg" alt="Account Login"></a>
 					</span>
 					
 					<div class="wrap-input100 rs1 validate-input" data-validate = "Username is required">
 						<input class="input100" id="username" type="text" name="username">
-						<span class="label-input100">Username</span>
+						<span class="label-input100">First 6 of Invoice #</span>
+					</div>
+					
+					
+					<div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+						<input class="input100" id="password" type="password" name="pass">
+						<span class="label-input100">Last 2 of Invoice (X-X)</span>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<button type="submit" class="login100-form-btn">
-							Sign in
+							Pay Now
 						</button>
 					</div>
 					
 					<div class="text-center w-full p-t-23">
-						<a href="forgot.html" class="txt1">
-							Forgot your Password?
+						<a href="mailto:georgiapeachsmart@gmail.com" class="txt1">
+							Need Help?
 						</a>
 					</div>
 				</form>
+				<script>
+  function checkAnswer(){
+      var account = document.getElementById('username').value;
+      var invoice = document.getElementById('password').value;
+      var dest = "https://peachsmart.github.io/billing/" + username + "/" + password + ".html";
+      location = dest
+  }
+  </script>
 			</div>
 		</div>
 	</div>
