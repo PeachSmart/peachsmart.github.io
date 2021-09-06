@@ -68,3 +68,14 @@
     
 
 })(jQuery);
+
+$("#failure").click(function () {
+  $(".notify").addClass("active");
+  $("#notifyType").addClass("failure");
+  
+  setTimeout(function(){
+    $(".notify").removeClass("active");
+    $("#notifyType").removeClass("failure");
+  },2000);
+});
+
