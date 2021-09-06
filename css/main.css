@@ -93,8 +93,12 @@ p {
 	font-family: OpenSans-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: white;
 	margin: 0px;
+}
+
+b {
+  color: white;
 }
 
 ul, li {
