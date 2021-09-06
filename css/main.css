@@ -1,4 +1,34 @@
+/*//////////////////////////////////////////////////////////////////
+[ ALERT ]*/
 
+#failure{
+  background:#ff3939;
+  color:#f0f0f0;  
+}
+
+.notify{  
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:0;  
+  box-sizing:border-box;
+  color:white;  
+  text-align:center;
+  background:rgba(0,0,0,.6);
+  overflow:hidden;
+  box-sizing:border-box;
+  transition:height .2s;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px; 
+  
+}
+
+.failure:before{
+  Content:"It looks like your invoice wasn't found. Double check the invoice number and double check that you put a dash in the second number!";
+}
 
 
 
