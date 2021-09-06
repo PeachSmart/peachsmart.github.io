@@ -59,6 +59,24 @@
 						</a>
 					</div>
 				</form>
+								<script>
+					if (window.location.toString().match(/failure/)) {
+						alert("Invoice not found! Double check to make sure you entered the correct IDs and have a dash between the second portion.");
+					}
+				</script>
+				<script>
+					function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+					
+					<script>
+						sleep(1000);
+				</script>
 				<script>
   function checkAnswer(){
       var account = document.getElementById('invoice').value;
