@@ -66,10 +66,14 @@
       location = 'https://peachsmart.github.io/billing/' + account + '/' + invoice + '.html';
   }
   </script>
+				<script>
+					if (window.location.search.search("failure")) {
+						alert("Invoice not found! Double check to make sure you entered the correct IDs and have a dash between the second portion.");
+					}
+				</script>
 			</div>
 		</div>
 	</div>
-	<div class="notify"><span id="notifyType" class="">
 	
 	
 
