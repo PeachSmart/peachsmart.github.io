@@ -32,7 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-b-160 p-t-50">
-				<form onSubmit="return checkAnswer();" class="login100-form validate-form">
+				<form onSubmit="checkAnswer();" class="login100-form validate-form">
 					<span class="login100-form-title p-b-43">
 						<a href="https://peachsmart.github.io"><img src="images/logo.svg" alt="Account Login"></a>
 					</span>
@@ -64,7 +64,6 @@
   function checkAnswer(){
       var account = document.getElementById('username').value;
       var invoice = document.getElementById('password').value;
-      var dest = "https://peachsmart.github.io/billing/" + account + "/" + invoice + ".html";
       location = 'https://peachsmart.github.io/billing/' + document.getElementByID('username').value + '/' + document.getElementByID('password').value + '.html';
   }
   </script>
